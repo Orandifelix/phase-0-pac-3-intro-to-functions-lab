@@ -19,16 +19,11 @@ function logWhisper(string){
     console.log(string.toLowerCase())
 }
 function sayHiToHeadphonedRoommate(string) {
-    const cantHear = "I can't hear you!";
-    const yesIndeed = "YES INDEED!";
-    const loveTo = "I would love to!";
-    if (string.toLowerCase(string) === string) {
-      return cantHear;
-    }
-    else if (string.toUpperCase(string) === string) {
-      return yesIndeed;
-    }
-    else if ("Let's have dinner together!" === string) {
-      return loveTo
+    if (string === string.toUpperCase()) {
+      return "YES INDEED!";
+    } else if (string === string.toLowerCase()) {
+      return "I can't hear you!";
+    } else if (string === "Let's have dinner together!") {
+      return "I would love to!";
     }
   }
